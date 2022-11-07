@@ -1,0 +1,124 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+  background: #141E30; 
+  background: -webkit-linear-gradient(to right, #243B55, #141E30);
+  background: linear-gradient(to right, #243B55, #141E30); 
+}
+
+html {
+  font-size: 16px;
+}
+
+main {
+  height: 100vh;
+  max-height: 100vh;
+  width: 100%;
+  
+
+}
+#text {
+  flex-shrink: 0;
+}
+li{
+  list-style: none;
+}
+.nav-pills .nav-link.active{
+  color: #fff!important;
+  background-color: #dc4f72!important;
+}
+.container{
+  height: 100vh;
+}
+.navigation{
+  position: relative;
+  background: #fff;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.5);
+}
+button{
+  background-color: #fff!important;
+  color: #000!important;
+  padding: 0.5rem 2rem!important;
+  font-size: 1.5rem!important;
+  font-weight: 500!important;
+  margin-bottom: 1rem;
+}
+button:hover{
+  color: #dc4f72!important;
+}
+.navigation__list{
+  padding: 2rem;
+}
+.nav-pills{
+  min-width: 10%;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+.tab-content{
+  flex-grow: 1;
+
+}
+.tab__text{
+  margin: 2rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  border-left: 0.5rem solid #5bc0de ;
+  box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.411);
+}
+.tab__text ul li h4{
+  font-size: 1.5rem;
+  color: #dc4f72;
+}
+.tab__item h2{
+  text-align: center;
+}
+.tab__text ul li p{
+  padding-left: 1rem;
+  font-size: 1.3rem;
+} 
+.input__group{
+  margin: 2rem;
+  display: flex;
+}
+.input{
+  padding: 15px 20px;
+  border: none;
+  outline: none;
+  border-radius: 1rem;
+  box-shadow: inset 2px 5px 5px 0 rgba(0, 0, 0, 0.5), 0 0 5px 0 rgba(0, 0, 0, 0.3);
+}
+.result{
+  text-align: center;
+}
+.result__button{
+  border-radius: 2rem;
+}
+.tab__result{
+  margin: 0 2rem;
+  display: flex;
+  align-items: center;
+}
+.tab__result input{
+  margin-left: 2rem;
+  flex-grow: 1;
+    border: none;
+  outline: none;
+  background: #eee;
+  padding: 1rem 2rem;
+  font-size: 1.8rem;
+  border-radius: 5px;
+
+}
+.tab__result label{
+  font-size: 1.8rem;
+
+  font-weight: 500;
+  color: #dc4f72;
+}
