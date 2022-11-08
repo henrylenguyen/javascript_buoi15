@@ -81,18 +81,18 @@
               </div>
               <div class="tab__input ">
                 <div class="row input__group ">
-                  <input class="col-3   m-2 input inputSalary" type="number" placeholder="Nhập môn A"  min="1">
-                  <input class="col-3 m-2 input inputSalary" type="number" placeholder="Nhập môn B" min="1">
-                  <input class="col-3 m-2 input inputSalary" type="number" placeholder="Nhập môn C" min="1">
-                  <input class="col-3 m-2 input inputSalary" type="number" placeholder="Điểm chuẩn" min="1">
-                  <select class="col-3 m-2 input">
+                  <input class="col-3 m-2 input inputPoint" type="number" placeholder="Nhập môn A"  min="1">
+                  <input class="col-3 m-2 input inputPoint" type="number"  placeholder="Nhập môn B" min="1">
+                  <input class="col-3 m-2 input inputPoint" type="number"  placeholder="Nhập môn C" min="1">
+                  <input class="col-3 m-2 input inputBenchmarks" type="number" placeholder="Điểm chuẩn" min="1">
+                  <select class="col-3 m-2 input" id="selectPointArea">
                     <option  value="Chọn khu vực">Chọn khu vực</option>
-                    <option  value="A">A</option>
+                    <option   value="A">A</option>
                     <option  value="B">B</option>
                     <option  value="C">C</option>
                   </select>
-                  <select class="col-3 m-2 input">
-                    <option  value="Chọn khu vực">Chọn đối tượng</option>
+                  <select class="col-3 m-2 input " id="selectPointSub">
+                    <option  value="Chọn đối tượng">Chọn đối tượng</option>
                     <option  value="1">1</option>
                     <option  value="2">2</option>
                     <option  value="3">3</option>
@@ -129,12 +129,12 @@
                     <ul>
                       <li>Cho biến k = số kw tiêu thụ</li>
                       <li>Cho biến m = số tiền</li>
-                      
+                      <li>Kiểm tra các miền giá trị k, nếu phù hợp với miền nào thì gán m = số tiền tương ứng</li>
                     </ul>
                   </li>
                   <li>
                     <h4>Output:</h4>
-                    <p>Kết quả trung bình 5 số đó</p>
+                    <p>Kết quả Họ tên kèm số tiền cần phải đóng</p>
                   </li>
                 </ul>
               </div>
