@@ -122,3 +122,6 @@ button:hover{
   font-weight: 500;
   color: #dc4f72;
 }
+#cable {
+  display: none;
+}
