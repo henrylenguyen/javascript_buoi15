@@ -186,7 +186,30 @@
                     </li>
                     <li>
                       <h4>Process:</h4>
-                      <p>Công thức:Thu nhập chịu thuế = Tổng thu nhập năm - 4tr- Số người phụ thuộc * 1.6tr
+                      <p>Công thức:Thu nhập chịu thuế (sum) = Tổng thu nhập năm - 4tr- Số người phụ thuộc * 1.6tr
+                        <ul>
+                          <li>Áp dụng công thức trên x phần trăm thuế phải đóng</li>
+                          <li>1 - 60  -> 5%</li>
+                          <li>61 - 120  -> 10%</li>
+                          <li>121 - 210  -> 15%</li>
+                          <li>211 - 384  -> 20%</li>
+                          <li>385 - 624  -> 25%</li>
+                          <li>624 - 960  -> 30%</li>
+                          <li>>960  -> 35%</li>
+                          <li>
+                            Mình sẽ dùng if else if như sau: 
+                            <ul>
+                              <li><= 60 =>vat = sum*0.05</li>
+                              <li><= 120 => vat = sum*0.1</li>
+                              <li><=210 => vat = sum*0.15</li>
+                              <li><=384 => vat = sum*0.2</li>
+                              <li><=624 => vat = sum*0.25</li>
+                              <li><=960 => vat = sum*0.3</li>
+                              <li>>960 => vat = sum*0.35</li>
+                            
+                            </ul>
+                          </li>
+                        </ul>
                       </p>
                     </li>
                     <li>
@@ -197,15 +220,17 @@
                 </div>
                 <div class="tab__input ">
                   <div class="row input__group ">
-                    <input class="input money" type="number" placeholder="Nhập USD cần quy đổi" min="1">
+                    <input class="input vat col mx-2" type="text" placeholder="Nhập Họ Tên">
+                    <input class="input vat col mx-2" type="number" placeholder="Nhập Tổng Thu Nhập Năm" min="1">
+                    <input class="input vat col mx-2" type="number" placeholder="Nhập Số Người Phụ Thuộc" min="1">
                   </div>
                   <div class="result">
-                    <button class="result__button" onclick="resultMoney();">Quy đổi</button>
+                    <button class="result__button" onclick="resultVAT();">Tính thuế</button>
                   </div>
                 </div>
                 <div class="tab__result">
                   <label>Kết quả là:</label>
-                  <input type="text" id="resultMoney" disabled>
+                  <div class="result__text" id="resultVAT"></div>
                 </div>
               </div>
             </div>

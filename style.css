@@ -125,3 +125,19 @@ button:hover{
 #cable {
   display: none;
 }
+.result__text div {
+  color: #fff;
+  padding: 0.5rem 1rem;
+}
+.tab__result .result__text {
+  display: block;
+  margin-left: 2rem;
+  flex-grow: 1;
+  border: none;
+  outline: none;
+  background: #eee;
+  padding: 1rem 2rem;
+  font-size: 1.3rem;
+  border-radius: 5px;
+  word-break: break-all;
+}
